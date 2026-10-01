@@ -1,0 +1,20 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://postgres-spring.cpks66o8a4qt.eu-north-1.rds.amazonaws.com:5432/postgres
+    username: root
+    password: postgres-123
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+debug: true
+
+logging:
+  level:
+    org.springframework: DEBUG
+    org.hibernate.SQL: DEBUG
+    org:hibernate.orm.jdbc.bind: TRACE
+

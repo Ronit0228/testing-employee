@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: testing
+
+  datasource:
+    url: jdbc:postgresql://${DATABASE_URL}/${DATABASE_NAME}
+    username: ${DATABASE_USERNAME}
+    password: ${DATABASE_PASSWORD}
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+debug: true
+
+logging:
+  level:
+    org.springframework: DEBUG
+    org.hibernate.SQL: DEBUG
+    org:hibernate.orm.jdbc.bind: TRACE
+
